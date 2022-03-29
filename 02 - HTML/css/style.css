@@ -1,0 +1,195 @@
+* {box-sizing: border-box;}
+body { 
+  margin: 0;
+  padding: 0;
+  background-color: #fa72c1 ;
+  background-size: cover;
+  background-position: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.2rem;
+  line-height: 1.4em;
+  position:relative;
+  padding-bottom: 3em;
+  min-height: 100vh;
+}
+.container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+/*header diseño, trasparencia, logo y configuracio*/
+.header {
+  background: rgba(255, 255, 255, 0.863);
+  padding: 1rem .5rem;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.header a{
+  color: black;
+  text-decoration: none;
+}
+
+.logo-nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+
+}
+.logo img{
+  width: 130px;
+  height: auto;
+  display: block;
+  border-radius: 50%;
+}
+.menu-icon {
+  display: none;
+}
+.navigation ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.navigation ul li{
+  display: inline-block;
+  padding: 0.5rem 1rem;
+}
+.navigation ul li a{
+  display: block;
+  transition: all 0.4s linear;
+  border-radius: 5px;
+}
+.navigation ul li a:hover {
+  background: #fc4e88;
+  padding: 4px 20px;
+}
+/*main todo lo que va en el centro*/
+.main{
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto ;
+  padding: 110px 1px;
+}
+.main a{
+  color: white;
+  text-decoration: none;
+}
+/*footer barra negra con marca de agua*/
+.footer {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  background-color: #000000;
+  color: #ffffff;
+}
+/*botton de enviar*/
+input[type=submit] {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #b2b51f;
+}
+/*controla el tamaño de la pagina */
+@media only screen and (max-width:500px){
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+  .navigation ul{
+    display: none;
+
+  }
+  .navigation ul.show{
+    display: block;
+  }
+  .navigation {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .navigation ul li{
+    display: block;
+    
+   
+  }
+  .navigation ul li a{
+    display: block;
+    padding: 0.5rem 0rem;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+  }
+  .navigation ul li a:hover {
+    background: #fc4e88;
+    padding: 4px 20px;
+  }
+}
+/*sabores*/
+h2{
+  text-align: left;
+}
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 20px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.container img {
+  vertical-align: middle;
+}
+/*la traparencia del cuadro sobre la imagen en contacto*/
+.contact {
+  position: absolute;
+  bottom: 0; 
+  background: rgba(0, 0, 0, 0.5); 
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px auto;
+
+
+}
+/*diseño de tabla*/
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  text-align: left;
+  padding: 8px;
+  font-style: italic;
+}
+thead{
+  background-color: black;
+  color: white;
+}
+
